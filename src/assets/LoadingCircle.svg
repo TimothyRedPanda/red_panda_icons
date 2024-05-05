@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="LoadingCircle">
+    <g id="LoadingCircle-2" data-name="LoadingCircle">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <path id="CircleStroke" d="M33.86,12c1.36,2.35,2.14,5.09,2.14,8,0,8.84-7.16,16-16,16S4,28.84,4,20,11.16,4,20,4c2.91,0,5.65.78,8,2.14" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="Cross">
+    <g id="Cross-2" data-name="Cross">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <line id="BottomToTopStroke" x1="4" y1="36" x2="36" y2="4" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+      <line id="TopToBottomStroke" x1="36" y1="36" x2="4" y2="4" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>

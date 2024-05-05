@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="UpArrow">
+    <g id="UpArrow-2" data-name="UpArrow">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <polyline id="ArrowStroke" points="4 33.33 20 6.67 36 33.33" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>

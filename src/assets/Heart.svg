@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="Heart">
+    <g id="Heart-2" data-name="Heart">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <path id="HeartStroke" d="M34,20.24l-14,14-14-14c-3.31-3.31-3.31-8.69,0-12h0c3.31-3.31,8.69-3.31,12,0l2,2,2-2c3.31-3.31,8.69-3.31,12,0h0c3.31,3.31,3.31,8.69,0,12Z" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>

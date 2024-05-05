@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="BurgerMenu">
+    <g id="BurgerMenu-2" data-name="BurgerMenu">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <line id="TopStroke" x1="4" y1="8" x2="36" y2="8" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+      <line id="MiddleStroke" x1="4" y1="20" x2="36" y2="20" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+      <line id="BottomStroke" x1="4" y1="32" x2="36" y2="32" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>

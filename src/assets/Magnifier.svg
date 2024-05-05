@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="Magnifier">
+    <g id="Magnifier-2" data-name="Magnifier">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <path id="EyePieceStroke" d="M4,14.67s0-10.67,10.67-10.67,10.67,10.67,10.67,10.67c0,0,0,10.67-10.67,10.67S4,14.67,4,14.67Z" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px;"/>
+      <line id="HandleStroke" x1="36" y1="36" x2="22.37" y2="22.37" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px;"/>
+    </g>
+  </g>
+</svg>
