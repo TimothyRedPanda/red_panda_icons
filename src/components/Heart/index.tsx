@@ -1,5 +1,5 @@
 'use client'
-import {motion} from 'framer-motion';
+import {easeInOut, motion} from 'framer-motion';
 import {useState} from "react";
 
 interface SVGRProps {
@@ -43,7 +43,7 @@ export default function Heart({title, titleId, desc, descId, dimension, color}: 
         />
         <motion.path
             animate={path ? {pathLength:1} : {pathLength:0.28}}
-            transition={{duration:0.35, easing:'spring'}}
+            transition={{duration:0.35, ease: easeInOut}}
             id = 'HeartStroke'
             d = 'M34,20.24l-14,14-14-14c-3.31-3.31-3.31-8.69,0-12h0c3.31-3.31,8.69-3.31,12,0l2,2,2-2c3.31-3.31,8.69-3.31,12,0h0c3.31,3.31,3.31,8.69,0,12Z'
             style = {{

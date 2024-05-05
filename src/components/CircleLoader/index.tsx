@@ -1,3 +1,4 @@
+'use client'
 import {easeInOut, motion} from 'framer-motion';
 import {useState} from 'react';
 
@@ -6,12 +7,12 @@ interface SVGRProps {
     titleId?: string;
     desc?: string;
     descId?: string;
-    dimension?: string;
     color?: string;
+    dimension?: string;
 }
 
-export default function Cross({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(false);
+export default function CircleLoader({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+    const [path, setPath] = useState(false)
     return (
         <motion.svg
             onHoverStart = {() => setPath(true)}
@@ -27,8 +28,8 @@ export default function Cross({title, titleId, desc, descId, dimension, color}: 
         >
     {desc ? <desc id = {descId}>{desc}</desc > : null}
             {title ? <title id = {titleId}>{title}</title > : null}
-            <g id = 'Cross'>
-      <g id = 'Cross-2' data-name = 'Cross'>
+            <g id = 'LoadingCircle'>
+      <g id = 'LoadingCircle-2' data-name = 'LoadingCircle'>
         <rect
             id = 'OuterBox'
             width = {40}
@@ -38,30 +39,11 @@ export default function Cross({title, titleId, desc, descId, dimension, color}: 
                 strokeWidth: 0,
             }}
         />
-        <motion.line
-            animate = {path ? {rotate: 45, scale: 0.8} : {rotate: 0}}
-            transition = {{duration: 0.35}}
-            id = 'BottomToTopStroke'
-            x1 = {4}
-            y1 = {36}
-            x2 = {36}
-            y2 = {4}
-            style = {{
-                fill: "none",
-                stroke: color || "#547dbf",
-                strokeLinecap: "round",
-                strokeMiterlimit: 10,
-                strokeWidth: 5,
-            }}
-        />
-        <motion.line
-            animate = {path ? {rotate: 45, scale: 0.8} : {rotate: 0}}
+        <motion.path
+            animate = {path ? {pathLength: 1} : {pathLength: 0.1}}
             transition = {{duration: 0.35, ease: easeInOut}}
-            id = 'TopToBottomStroke'
-            x1 = {36}
-            y1 = {36}
-            x2 = {4}
-            y2 = {4}
+            id = 'CircleStroke'
+            d = 'M33.86,12c1.36,2.35,2.14,5.09,2.14,8,0,8.84-7.16,16-16,16S4,28.84,4,20,11.16,4,20,4c2.91,0,5.65.78,8,2.14'
             style = {{
                 fill: "none",
                 stroke: color || "#547dbf",

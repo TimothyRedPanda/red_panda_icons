@@ -3,6 +3,7 @@ import './App.scss'
 import Heart from "./components/Heart";
 import Magnifier from "./components/Magnifier";
 import Cross from "./components/Cross";
+import CircleLoader from './components/CircleLoader';
 
 function App() {
     return (
@@ -16,6 +17,10 @@ function App() {
                 </section >
                 <section className = 'icon-section'>
                     <Cross />
+                </section >
+
+                <section className = 'icon-section'>
+                    <CircleLoader />
                 </section >
             </main >
         </>

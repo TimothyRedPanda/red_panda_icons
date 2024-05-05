@@ -1,4 +1,4 @@
-import {motion} from "framer-motion"
+import {easeInOut, motion} from "framer-motion"
 
 interface SVGRProps {
     title?: string;
@@ -54,7 +54,7 @@ export default function Magnifier({title, titleId, desc, descId, dimension, colo
         <motion.line
             initial = {{pathLength: 0, opacity: 0}}
             animate = {{pathLength: 1, opacity: 1}}
-            transition = {{duration: 0.35}}
+            transition = {{duration: 0.35, ease: easeInOut}}
             id = 'HandleStroke'
             x1 = {36}
             y1 = {36}
