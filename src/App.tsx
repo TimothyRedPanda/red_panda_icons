@@ -5,26 +5,30 @@ import Magnifier from "./components/Magnifier";
 import Cross from "./components/Cross";
 import CircleLoader from './components/CircleLoader';
 import BurgerMenu from './components/BurgerMenu';
+import BarLoaders from "./components/BarLoaders";
 
 function App() {
     return (
         <>
             <main className = 'main-wrapper'>
                   <section className = 'icon-section'>
-                    <Heart />
+                    <Heart dimension='56px'/>
                 </section >
                   <section className = 'icon-section'>
-                    <Magnifier />
+                    <Magnifier dimension='56px'/>
                 </section >
                 <section className = 'icon-section'>
-                    <Cross />
+                    <Cross dimension='56px'/>
                 </section >
 
                 <section className = 'icon-section'>
-                    <CircleLoader />
+                    <CircleLoader dimension='56px'/>
                 </section >
                 <section className = 'icon-section'>
-                    <BurgerMenu />
+                    <BurgerMenu dimension='56px'/>
+                </section >
+                <section className = 'icon-section'>
+                    <BarLoaders dimension='56px'/>
                 </section >
             </main >
         </>
