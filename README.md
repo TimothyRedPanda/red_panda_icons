@@ -8,5 +8,13 @@ Make sure you have installed Framer Motion as this is required for the animation
 
 `npm install framer-motion`
 
-That's it! I hope you enjoy them. I will be adding more as time goes on.
+That's it!
+I hope you enjoy them.
+I will be adding more as time goes on.
+When you import them into your project,
+each one has two props color (the stroke color) and dimension —the size in px, e.g., 48px.
+
+`<CircleLoader dimension="32px" color="#000"/>`
+
+Both these props are optional, so no worries if you just want to use the defaults.
 
