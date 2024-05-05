@@ -4,6 +4,7 @@ import Heart from "./components/Heart";
 import Magnifier from "./components/Magnifier";
 import Cross from "./components/Cross";
 import CircleLoader from './components/CircleLoader';
+import BurgerMenu from './components/BurgerMenu';
 
 function App() {
     return (
@@ -21,6 +22,9 @@ function App() {
 
                 <section className = 'icon-section'>
                     <CircleLoader />
+                </section >
+                <section className = 'icon-section'>
+                    <BurgerMenu />
                 </section >
             </main >
         </>
