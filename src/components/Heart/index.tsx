@@ -17,11 +17,10 @@ export default function Heart({title, titleId, desc, descId, dimension, color}: 
     const [path, setPath] = useState(true);
     return (
         <motion.svg
+            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
             initial={{opacity:0, scale:0}}
             animate={{opacity:1, scale:1}}
             transition={{duration: 1}}
-            onHoverStart={() => setPath(false)}
-            onHoverEnd={() => setPath(true)}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'

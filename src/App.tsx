@@ -8,6 +8,7 @@ import BurgerMenu from './components/BurgerMenu';
 import BarLoaders from "./components/BarLoaders";
 import Panda from "./components/Panda"
 import BurgerMenuAlt from "./components/BurgerMenuAlt";
+import Envelope from "./components/Envelope";
 
 function App() {
     return (
@@ -22,7 +23,9 @@ function App() {
                 <section className = 'icon-section'>
                     <Cross dimension = '56px'/>
                 </section >
-
+                <section className = 'icon-section'>
+                    <Envelope dimension = '56px'/>
+                </section >
                 <section className = 'icon-section'>
                     <CircleLoader dimension = '56px'/>
                 </section >

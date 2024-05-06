@@ -1,22 +1,27 @@
-import {easeInOut, motion} from "framer-motion"
+import {motion} from 'framer-motion';
 import {useState} from 'react';
+
 interface SVGRProps {
     title?: string;
     titleId?: string;
     desc?: string;
     descId?: string;
-    dimension?: string;
     color?: string;
+    dimension?: string;
 }
 
-export default function Magnifier({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(true)
+export default function Envelope({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+    const [path, setPath] = useState(true);
     return (
         <motion.svg
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
-            initial = {{rotate: -15}}
-            animate={path ? {rotate:0} : {rotate:-15}}
-            transition = {{duration: 0.35}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
+            initial = {{opacity: 0, x: -100}}
+            animate = {{opacity: 1, x: 0}}
+            transition = {{duration: 1}}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -28,8 +33,12 @@ export default function Magnifier({title, titleId, desc, descId, dimension, colo
         >
     {desc ? <desc id = {descId}>{desc}</desc > : null}
             {title ? <title id = {titleId}>{title}</title > : null}
-            <g id = 'Magnifier'>
-      <g id = 'Magnifier-2' data-name = 'Magnifier'>
+            <motion.g
+                id = 'Mail'
+                animate = {path ? {rotate: 20} : {rotate: 0}}
+                transition = {{duration: 1 }}
+            >
+      <g id = 'Envelope'>
         <rect
             id = 'OuterBox'
             width = {40}
@@ -39,39 +48,33 @@ export default function Magnifier({title, titleId, desc, descId, dimension, colo
                 strokeWidth: 0,
             }}
         />
-        <motion.path
-            initial = {{pathLength: 0, opacity: 0}}
-            animate = {{pathLength: 1, opacity: 1}}
-            transition = {{duration: 0.6}}
-            id = 'EyePieceStroke'
-            d = 'M4,14.67s0-10.67,10.67-10.67,10.67,10.67,10.67,10.67c0,0,0,10.67-10.67,10.67S4,14.67,4,14.67Z'
+        <rect
+            id = 'EnvelopeEdge'
+            x = {4}
+            y = {12}
+            width = {32}
+            height = {18}
             style = {{
                 fill: "none",
                 stroke: color || "#547dbf",
                 strokeLinecap: "round",
                 strokeLinejoin: "round",
-                strokeWidth: 5,
+                strokeWidth: 3,
             }}
         />
-        <motion.line
-            initial = {{pathLength: 0, opacity: 0}}
-            animate = {{pathLength: 1, opacity: 1}}
-            transition = {{duration: 0.35, ease: easeInOut}}
-            id = 'HandleStroke'
-            x1 = {36}
-            y1 = {36}
-            x2 = {22.37}
-            y2 = {22.37}
+        <polyline
+            id = 'Sleeve'
+            points = '4 12 20 24 36 12'
             style = {{
                 fill: "none",
                 stroke: color || "#547dbf",
                 strokeLinecap: "round",
                 strokeLinejoin: "round",
-                strokeWidth: 5,
+                strokeWidth: 3,
             }}
         />
       </g >
-    </g >
+    </motion.g >
   </motion.svg >
     )
 }

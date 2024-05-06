@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <g id="Mail">
+    <g id="Envelope">
+      <rect id="OuterBox" width="40" height="40" style="fill: none; stroke-width: 0px;"/>
+      <rect id="EnvelopeEdge" x="4" y="12" width="32" height="18" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline id="Sleeve" points="4 12 20 24 36 12" style="fill: none; stroke: #547dbf; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+    </g>
+  </g>
+</svg>

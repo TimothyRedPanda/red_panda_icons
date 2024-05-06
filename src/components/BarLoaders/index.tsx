@@ -17,8 +17,7 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
             initial={{opacity:0, y:-200}}
             animate={{opacity:1, y:0}}
             transition={{duration: 1}}
-            onHoverStart={() => setPath(false)}
-            onHoverEnd={() => setPath(true)}
+            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'

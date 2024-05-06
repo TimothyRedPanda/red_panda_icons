@@ -15,11 +15,14 @@ export default function CircleLoader({title, titleId, desc, descId, dimension, c
     const [path, setPath] = useState(true)
     return (
         <motion.svg
-            initial={{opacity:0,rotate:180, x:-200}}
-            animate={{opacity:1, rotate:0, x:0}}
-            transition={{duration: 1}}
-            onHoverStart = {() => setPath(false)}
-            onHoverEnd = {() => setPath(true)}
+            initial = {{opacity: 0, rotate: 180, x: -200}}
+            animate = {{opacity: 1, rotate: 0, x: 0}}
+            transition = {{duration: 1}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
