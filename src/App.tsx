@@ -13,7 +13,6 @@ import Envelope from "./components/Envelope";
 function App() {
     return (
         <>
-            <code style={{position:"absolute", padding: "0.5rem", fontSize:"1rem", width:"100vw", height:"2.5rem", display:"flex", justifyContent:"center", alignItems:"center"}} >npm i red_panda_component framer-motion typescript</code >
             <main className = 'main-wrapper'>
 
                 <section className = 'icon-section'>
