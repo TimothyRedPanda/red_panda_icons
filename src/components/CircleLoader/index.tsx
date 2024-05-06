@@ -9,11 +9,13 @@ interface SVGRProps {
     descId?: string;
     color?: string;
     dimension?: string;
+    onClick?: () => void;
 }
 
-export default function CircleLoader({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(true)
+export default function CircleLoader({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
+    const [path, setPath] = useState(false)
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
             initial = {{opacity: 0, rotate: 180, x: -200}}
             animate = {{opacity: 1, rotate: 0, x: 0}}
@@ -61,5 +63,6 @@ export default function CircleLoader({title, titleId, desc, descId, dimension, c
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

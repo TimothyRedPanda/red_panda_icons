@@ -9,18 +9,23 @@ interface SVGRProps {
     descId?: string;
     dimension?: string;
     color?: string;
+    onClick?: () => void;
 }
 
 
-
-export default function Heart({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function Heart({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true);
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
-            initial={{opacity:0, scale:0}}
-            animate={{opacity:1, scale:1}}
-            transition={{duration: 1}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
+            initial = {{opacity: 0, scale: 0}}
+            animate = {{opacity: 1, scale: 1}}
+            transition = {{duration: 1}}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -44,8 +49,8 @@ export default function Heart({title, titleId, desc, descId, dimension, color}: 
             }}
         />
         <motion.path
-            animate={path ? {pathLength:1} : {pathLength:0.28}}
-            transition={{duration:0.35, ease: easeInOut}}
+            animate = {path ? {pathLength: 1} : {pathLength: 0.28}}
+            transition = {{duration: 0.35, ease: easeInOut}}
             id = 'HeartStroke'
             d = 'M34,20.24l-14,14-14-14c-3.31-3.31-3.31-8.69,0-12h0c3.31-3.31,8.69-3.31,12,0l2,2,2-2c3.31-3.31,8.69-3.31,12,0h0c3.31,3.31,3.31,8.69,0,12Z'
             style = {{
@@ -59,5 +64,6 @@ export default function Heart({title, titleId, desc, descId, dimension, color}: 
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

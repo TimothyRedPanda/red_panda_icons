@@ -8,16 +8,22 @@ interface SVGRProps {
     descId?: string;
     color?: string;
     dimension?: string;
+    onClick?: () => void;
 }
 
-export default function BarLoaders({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function BarLoaders({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true);
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
-            initial={{opacity:0, y:-200}}
-            animate={{opacity:1, y:0}}
-            transition={{duration: 1}}
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
+            initial = {{opacity: 0, y: -200}}
+            animate = {{opacity: 1, y: 0}}
+            transition = {{duration: 1}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -41,8 +47,8 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
             }}
         />
         <motion.line
-            animate={path ? {pathLength: 1} : {pathLength: 0.5}}
-            transition={{duration: 0.35, ease: easeInOut}}
+            animate = {path ? {pathLength: 1} : {pathLength: 0.5}}
+            transition = {{duration: 0.35, ease: easeInOut}}
             id = 'LeftStroke'
             x1 = {8}
             y1 = {36}
@@ -57,24 +63,24 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
             }}
         />
          <motion.line
-             animate={path ? {pathLength: 1} : {pathLength: 0.5}}
-             transition={{duration: 0.35, ease: easeInOut, delay:0.25}}
-            id = 'MiddleStroke'
-            x1 = {20}
-            y1 = {30}
-            x2 = {20}
-            y2 = {10}
-            style = {{
-                fill: "none",
-                stroke: color || "#547dbf",
-                strokeLinecap: "round",
-                strokeMiterlimit: 10,
-                strokeWidth: 5,
-            }}
-        />
+             animate = {path ? {pathLength: 1} : {pathLength: 0.5}}
+             transition = {{duration: 0.35, ease: easeInOut, delay: 0.25}}
+             id = 'MiddleStroke'
+             x1 = {20}
+             y1 = {30}
+             x2 = {20}
+             y2 = {10}
+             style = {{
+                 fill: "none",
+                 stroke: color || "#547dbf",
+                 strokeLinecap: "round",
+                 strokeMiterlimit: 10,
+                 strokeWidth: 5,
+             }}
+         />
         <motion.line
-            animate={path ? {pathLength: 1} : {pathLength: 0.5}}
-            transition={{duration: 0.35, ease: easeInOut, delay:0.3}}
+            animate = {path ? {pathLength: 1} : {pathLength: 0.5}}
+            transition = {{duration: 0.35, ease: easeInOut, delay: 0.3}}
             id = 'RightStroke'
             x1 = {32}
             y1 = {34}
@@ -91,5 +97,6 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

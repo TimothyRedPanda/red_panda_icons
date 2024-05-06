@@ -1,5 +1,6 @@
 import {easeInOut, motion} from "framer-motion"
 import {useState} from 'react';
+
 interface SVGRProps {
     title?: string;
     titleId?: string;
@@ -7,15 +8,21 @@ interface SVGRProps {
     descId?: string;
     dimension?: string;
     color?: string;
+    onClick?: () => void;
 }
 
-export default function Magnifier({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function Magnifier({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true)
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
             initial = {{rotate: -15}}
-            animate={path ? {rotate:0} : {rotate:-15}}
+            animate = {path ? {rotate: 0} : {rotate: -15}}
             transition = {{duration: 0.35}}
             id = 'Layer_2'
             data-name = 'Layer 2'
@@ -73,5 +80,6 @@ export default function Magnifier({title, titleId, desc, descId, dimension, colo
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

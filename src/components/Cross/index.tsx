@@ -8,16 +8,22 @@ interface SVGRProps {
     descId?: string;
     dimension?: string;
     color?: string;
+    onClick?: () => void;
 }
 
-export default function Cross({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function Cross({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(false);
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
-            initial={{opacity:0, rotate: 180}}
-            animate={{opacity:1, rotate: 0}}
-            transition={{duration: 1}}
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
+            initial = {{opacity: 0, rotate: 180}}
+            animate = {{opacity: 1, rotate: 0}}
+            transition = {{duration: 1}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -75,5 +81,6 @@ export default function Cross({title, titleId, desc, descId, dimension, color}: 
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

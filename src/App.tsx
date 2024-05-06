@@ -15,31 +15,31 @@ function App() {
         <>
             <main className = 'main-wrapper'>
                 <section className = 'icon-section'>
-                    <Heart dimension = '56px'/>
+                    <Heart/>
                 </section >
                 <section className = 'icon-section'>
-                    <Magnifier dimension = '56px'/>
+                    <Magnifier/>
                 </section >
                 <section className = 'icon-section'>
-                    <Cross dimension = '56px'/>
+                    <Cross/>
                 </section >
                 <section className = 'icon-section'>
-                    <Envelope dimension = '56px'/>
+                    <Envelope/>
                 </section >
                 <section className = 'icon-section'>
-                    <CircleLoader dimension = '56px'/>
+                    <CircleLoader/>
                 </section >
                 <section className = 'icon-section'>
-                    <BurgerMenu dimension = '56px'/>
+                    <BurgerMenu/>
                 </section >
                 <section className = 'icon-section'>
-                    <BurgerMenuAlt dimension = '56px'/>
+                    <BurgerMenuAlt/>
                 </section >
                 <section className = 'icon-section'>
-                    <BarLoaders dimension = '56px'/>
+                    <BarLoaders/>
                 </section >
                 <section className = 'icon-section'>
-                    <Panda dimension = '56px'/>
+                    <Panda/>
                 </section >
             </main >
         </>

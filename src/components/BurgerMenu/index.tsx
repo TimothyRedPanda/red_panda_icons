@@ -1,5 +1,6 @@
 import {easeInOut, motion} from 'framer-motion';
 import {useState} from 'react';
+
 interface SVGRProps {
     title?: string;
     titleId?: string;
@@ -7,16 +8,22 @@ interface SVGRProps {
     descId?: string;
     color?: string;
     dimension?: string;
+    onClick?: () => void;
 }
 
-export default function BurgerMenu({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function BurgerMenu({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true)
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
-            initial={{opacity:0, x:-200}}
-            animate={{opacity:1, x:0}}
-            transition={{duration: 1}}
-            onClick={path ? () => {setPath(false)} : () => {setPath(true)}}
+            initial = {{opacity: 0, x: -200}}
+            animate = {{opacity: 1, x: 0}}
+            transition = {{duration: 1}}
+            onClick = {path ? () => {
+                setPath(false)
+            } : () => {
+                setPath(true)
+            }}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -90,5 +97,6 @@ export default function BurgerMenu({title, titleId, desc, descId, dimension, col
       </g >
     </g >
   </motion.svg >
+        </button >
     )
 }

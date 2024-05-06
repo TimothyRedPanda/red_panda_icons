@@ -8,11 +8,13 @@ interface SVGRProps {
     descId?: string;
     color?: string;
     dimension?: string;
+    onClick?: () => void;
 }
 
-export default function Envelope({title, titleId, desc, descId, dimension, color}: SVGRProps) {
+export default function Envelope({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true);
     return (
+        <button style = {{outline: "none", background: "transparent", border: "none"}} onClick = {onClick}>
         <motion.svg
             onClick = {path ? () => {
                 setPath(false)
@@ -35,8 +37,8 @@ export default function Envelope({title, titleId, desc, descId, dimension, color
             {title ? <title id = {titleId}>{title}</title > : null}
             <motion.g
                 id = 'Mail'
-                animate = {path ? {rotate: 20} : {rotate: 0}}
-                transition = {{duration: 1 }}
+                animate = {path ? {rotate: 0} : {rotate: 45}}
+                transition = {{duration: 0.35}}
             >
       <g id = 'Envelope'>
         <rect
@@ -76,5 +78,6 @@ export default function Envelope({title, titleId, desc, descId, dimension, color
       </g >
     </motion.g >
   </motion.svg >
+            </button >
     )
 }
