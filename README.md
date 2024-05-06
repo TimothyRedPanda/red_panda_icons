@@ -12,7 +12,7 @@ That's it!
 I hope you enjoy them.
 I will be adding more as time goes on.
 When you import them into your project,
-each one has two props color (the stroke color) and dimension —the size in px, e.g., 48px.
+each one has two props that is color (the stroke color) and dimension (i.e. if you want 32x32px e.t.c).
 
 `<CircleLoader dimension="32px" color="#000"/>`
 
