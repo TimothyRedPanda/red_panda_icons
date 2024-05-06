@@ -12,23 +12,23 @@ function App() {
         <>
             <main className = 'main-wrapper'>
                   <section className = 'icon-section'>
-                    <Heart dimension='56px'/>
+                    <Heart dimension = '56px'/>
                 </section >
                   <section className = 'icon-section'>
-                    <Magnifier dimension='56px'/>
+                    <Magnifier dimension = '56px'/>
                 </section >
                 <section className = 'icon-section'>
-                    <Cross dimension='56px'/>
+                    <Cross dimension = '56px'/>
                 </section >
 
                 <section className = 'icon-section'>
-                    <CircleLoader dimension='56px'/>
+                    <CircleLoader dimension = '56px'/>
                 </section >
                 <section className = 'icon-section'>
-                    <BurgerMenu dimension='56px'/>
+                    <BurgerMenu dimension = '56px'/>
                 </section >
                 <section className = 'icon-section'>
-                    <BarLoaders dimension='56px'/>
+                    <BarLoaders dimension = '56px'/>
                 </section >
             </main >
         </>
