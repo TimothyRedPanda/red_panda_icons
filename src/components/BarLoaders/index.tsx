@@ -11,14 +11,11 @@ interface SVGRProps {
 }
 
 export default function BarLoaders({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(false);
+    const [path, setPath] = useState(true);
     return (
         <motion.svg
-            initial={{rotate: 90}}
-            onHoverStart={() => setPath(true)}
-            onHoverEnd={() => setPath(false)}
-            whileHover={{rotate: 0}}
-            transition={{duration: 0.35, ease: easeInOut}}
+            onHoverStart={() => setPath(false)}
+            onHoverEnd={() => setPath(true)}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
@@ -59,7 +56,7 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
         />
          <motion.line
              animate={path ? {pathLength: 1} : {pathLength: 0.5}}
-             transition={{duration: 0.35, ease: easeInOut}}
+             transition={{duration: 0.35, ease: easeInOut, delay:0.25}}
             id = 'MiddleStroke'
             x1 = {20}
             y1 = {30}
@@ -75,7 +72,7 @@ export default function BarLoaders({title, titleId, desc, descId, dimension, col
         />
         <motion.line
             animate={path ? {pathLength: 1} : {pathLength: 0.5}}
-            transition={{duration: 0.35, ease: easeInOut}}
+            transition={{duration: 0.35, ease: easeInOut, delay:0.3}}
             id = 'RightStroke'
             x1 = {32}
             y1 = {34}

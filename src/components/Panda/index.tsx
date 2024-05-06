@@ -12,14 +12,14 @@ interface SVGRProps {
 }
 
 export default function Panda({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(false)
+    const [path, setPath] = useState(true)
     return (
         <motion.svg
             onHoverStart={() => {
-                setPath(true)
+                setPath(false)
             }}
             onHoverEnd={() => {
-                setPath(false)
+                setPath(true)
             }}
             id="Layer_2"
             data-name="Layer 2"

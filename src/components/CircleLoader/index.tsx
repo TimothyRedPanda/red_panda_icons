@@ -12,11 +12,11 @@ interface SVGRProps {
 }
 
 export default function CircleLoader({title, titleId, desc, descId, dimension, color}: SVGRProps) {
-    const [path, setPath] = useState(false)
+    const [path, setPath] = useState(true)
     return (
         <motion.svg
-            onHoverStart = {() => setPath(true)}
-            onHoverEnd = {() => setPath(false)}
+            onHoverStart = {() => setPath(false)}
+            onHoverEnd = {() => setPath(true)}
             id = 'Layer_2'
             data-name = 'Layer 2'
             xmlns = 'http://www.w3.org/2000/svg'
