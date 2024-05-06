@@ -5,6 +5,8 @@ To install these, you need to simply use npm as I have set them up as a package.
 
 `npm i red_panda_icons typescript framer-motion`
 
+Example: https://red-panda-icons.vercel.app/
+
 This will install the icons and all their dependencies.
 I hope you enjoy!
 Oh, one last
