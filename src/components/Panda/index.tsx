@@ -15,6 +15,9 @@ export default function Panda({title, titleId, desc, descId, dimension, color}: 
     const [path, setPath] = useState(true)
     return (
         <motion.svg
+            initial={{opacity:0, y:-200, rotate:180}}
+            animate={{opacity:1, y:0, rotate:0}}
+            transition={{duration: 1}}
             onHoverStart={() => {
                 setPath(false)
             }}

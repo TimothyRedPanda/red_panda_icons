@@ -13,6 +13,9 @@ export default function BurgerMenuAlt({title, titleId, desc, descId, dimension, 
     const [path, setPath] = useState(true)
     return (
         <motion.svg
+            initial={{opacity:0, x:-200}}
+            animate={{opacity:1, x:0}}
+            transition={{duration: 1}}
             onHoverStart = {() => setPath(false)}
             onHoverEnd={() => setPath(true)}
             id = 'Layer_2'
