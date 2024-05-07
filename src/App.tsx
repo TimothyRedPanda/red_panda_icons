@@ -1,14 +1,14 @@
 'use client'
 import './App.scss'
-import Heart from "./components/Heart";
-import Magnifier from "./components/Magnifier";
-import Cross from "./components/Cross";
-import CircleLoader from './components/CircleLoader';
-import BurgerMenu from './components/BurgerMenu';
-import BarLoaders from "./components/BarLoaders";
-import Panda from "./components/Panda"
-import BurgerMenuAlt from "./components/BurgerMenuAlt";
-import Envelope from "./components/Envelope";
+import Heart from "../icons/Heart";
+import Magnifier from "../icons/Magnifier";
+import Cross from "../icons/Cross";
+import CircleLoader from '../icons/CircleLoader';
+import BurgerMenu from '../icons/BurgerMenu';
+import BarLoaders from "../icons/BarLoaders";
+import Panda from "../icons/Panda"
+import BurgerMenuAlt from "../icons/BurgerMenuAlt";
+import Envelope from "../icons/Envelope";
 
 function App() {
     return (

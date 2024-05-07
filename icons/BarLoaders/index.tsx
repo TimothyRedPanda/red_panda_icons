@@ -14,7 +14,7 @@ interface SVGRProps {
 export default function BarLoaders({title, titleId, desc, descId, dimension, color, onClick}: SVGRProps) {
     const [path, setPath] = useState(true);
     return (
-        <button style = {{outline: "none", background: "transparent", border: "none", cursor:"pointer"}} onClick = {onClick}>
+        <button style = {{width:"fit-content", height: "fit-content", outline: "none", background: "transparent", border: "none", cursor:"pointer"}} onClick = {onClick}>
         <motion.svg
             initial = {{opacity: 0, y: -200}}
             animate = {{opacity: 1, y: 0}}
