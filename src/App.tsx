@@ -10,6 +10,7 @@ import Panda from "../icons/Panda"
 import BurgerMenuAlt from "../icons/BurgerMenuAlt";
 import Envelope from "../icons/Envelope";
 import Signal from "../icons/Signal"
+import Play from "../icons/Play";
 
 function App() {
     return (
@@ -55,6 +56,10 @@ function App() {
                 <section className = 'icon-section'>
                     <Signal />
                     <code >import Signal</code >
+                </section >
+                <section className = 'icon-section'>
+                    <Play/>
+                    <code >import Play</code >
                 </section >
             </main >
         </>

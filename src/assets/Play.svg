@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <g id="Play">
+    <g id="Play-2" data-name="Play">
+      <rect id="BorderBox" width="48" height="48" style="fill: none; stroke-width: 0px;"/>
+      <polygon id="Play-3" data-name="Play" points="21.66 12.69 21.66 35.31 40.97 24 21.66 12.69" style="fill: none; stroke: #231f20; stroke-linejoin: round; stroke-width: 3.2px;"/>
+      <line id="RightPause" x1="13.66" y1="35.31" x2="13.66" y2="12.69" style="fill: none; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.2px;"/>
+      <line id="LeftPause" x1="7.03" y1="35.31" x2="7.03" y2="12.69" style="fill: none; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3.2px;"/>
+    </g>
+  </g>
+</svg>

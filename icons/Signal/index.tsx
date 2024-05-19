@@ -74,7 +74,7 @@ export default function Signal({
                 stroke: color || "#547dbf",
                 strokeLinecap: "round",
                 strokeMiterlimit: 10,
-                strokeWidth: "3.39px",
+                strokeWidth: 5,
             }}
         />
         <motion.path
@@ -88,7 +88,7 @@ export default function Signal({
                 stroke: color || "#547dbf",
                 strokeLinecap: "round",
                 strokeMiterlimit: 10,
-                strokeWidth: "3.39px",
+                strokeWidth: 5,
             }}
         />
         <motion.path
@@ -102,7 +102,7 @@ export default function Signal({
                 stroke: color || "#547dbf",
                 strokeLinecap: "round",
                 strokeMiterlimit: 10,
-                strokeWidth: "3.39px",
+                strokeWidth: 5,
             }}
         />
       </g >
