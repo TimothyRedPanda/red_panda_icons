@@ -15,7 +15,7 @@ interface SVGRProps {
 export default function Signal({
                                    title, titleId, desc, descId, dimension, color, onClick
                                }: SVGRProps) {
-    const [path, setPath] = useState(false);
+    const [path, setPath] = useState(true);
     return (<button
             style = {{
                 width: "fit-content",
