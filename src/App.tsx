@@ -9,6 +9,7 @@ import BarLoaders from "../icons/BarLoaders";
 import Panda from "../icons/Panda"
 import BurgerMenuAlt from "../icons/BurgerMenuAlt";
 import Envelope from "../icons/Envelope";
+import Signal from "../icons/Signal"
 
 function App() {
     return (
@@ -50,6 +51,10 @@ function App() {
                 <section className = 'icon-section'>
                     <Panda />
                     <code >import Panda</code >
+                </section >
+                <section className = 'icon-section'>
+                    <Signal />
+                    <code >import Signal</code >
                 </section >
             </main >
         </>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <g id="Signal">
+    <g id="Signal-2" data-name="Signal">
+      <rect id="BorderBox" width="48" height="48" style="fill: none; stroke-width: 0px;"/>
+      <circle id="Dot" cx="24" cy="34.3" r="3.39" style="fill: #000; stroke-width: 0px;"/>
+      <path id="Bottom" d="M18,28.3c.4-.4,2.57-2.49,6-2.49s5.6,2.09,6,2.49" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 3.39px;"/>
+      <path id="Middle" d="M12,22.3c.8-.8,5.13-4.97,12-4.97s11.2,4.17,12,4.97" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 3.39px;"/>
+      <path id="TopBar" d="M7.03,17.33c1.13-1.13,7.26-7.03,16.97-7.03,9.72,0,15.84,5.9,16.97,7.03" style="fill: none; stroke: #000; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 3.39px;"/>
+    </g>
+  </g>
+</svg>
