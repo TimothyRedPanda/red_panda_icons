@@ -15,53 +15,53 @@ import Play from "../icons/Play";
 function App() {
     return (
         <>
-            <main className = 'main-wrapper'>
+            <main className='main-wrapper'>
 
-                <section className = 'icon-section'>
-                    <Heart />
-                    <code >import Heart</code >
-                </section >
-                <section className = 'icon-section'>
-                    <Magnifier />
-                    <code >import Magnifier</code >
-                </section >
-                <section className = 'icon-section'>
-                    <Cross />
-                    <code >import Cross</code >
-                </section >
-                <section className = 'icon-section'>
-                    <Envelope />
-                    <code >import Envelope</code >
-                </section >
-                <section className = 'icon-section'>
-                    <CircleLoader />
-                    <code >import CircleLoader</code >
-                </section >
-                <section className = 'icon-section'>
-                    <BurgerMenu />
-                    <code >import BurgerMenu</code >
-                </section >
-                <section className = 'icon-section'>
-                    <BurgerMenuAlt />
-                    <code >import BurgerMenuAlt</code >
-                </section >
-                <section className = 'icon-section'>
-                    <BarLoaders />
-                   <code >import BarLoaders</code >
-                </section >
-                <section className = 'icon-section'>
-                    <Panda />
-                    <code >import Panda</code >
-                </section >
-                <section className = 'icon-section'>
-                    <Signal />
-                    <code >import Signal</code >
-                </section >
-                <section className = 'icon-section'>
+                <section className='icon-section'>
+                    <Heart/>
+                    <code>import Heart</code>
+                </section>
+                <section className='icon-section'>
+                    <Magnifier/>
+                    <code>import Magnifier</code>
+                </section>
+                <section className='icon-section'>
+                    <Cross/>
+                    <code>import Cross</code>
+                </section>
+                <section className='icon-section'>
+                    <Envelope/>
+                    <code>import Envelope</code>
+                </section>
+                <section className='icon-section'>
+                    <CircleLoader/>
+                    <code>import CircleLoader</code>
+                </section>
+                <section className='icon-section'>
+                    <BurgerMenu/>
+                    <code>import BurgerMenu</code>
+                </section>
+                <section className='icon-section'>
+                    <BurgerMenuAlt/>
+                    <code>import BurgerMenuAlt</code>
+                </section>
+                <section className='icon-section'>
+                    <BarLoaders/>
+                    <code>import BarLoaders</code>
+                </section>
+                <section className='icon-section'>
+                    <Panda/>
+                    <code>import Panda</code>
+                </section>
+                <section className='icon-section'>
+                    <Signal/>
+                    <code>import Signal</code>
+                </section>
+                <section className='icon-section'>
                     <Play/>
-                    <code >import Play</code >
-                </section >
-            </main >
+                    <code>import Play</code>
+                </section>
+            </main>
         </>
     )
 }
